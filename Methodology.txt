@@ -1,0 +1,59 @@
+METHODOLOGY
+
+(A) Field screening
+
+The field trial was carried out during the summer of 2023 at 
+the Woodman Farm (43°08′58″N, 70°56′28.″W and Elevation 41.59 m) 
+to test the resistance of 7 squash accessions (comprising 3 cultivars 
+and 4 breeding lines ) (Table 1) to Cucurbit Powdery Mildew (CPM). 
+The trial was designed in complete randomized blocks, with 3 replications, 
+each replication consisting of 4 plants. Summer Squash were planted around 
+the fields and innoculated with CPM before the test squash accessions were
+planted. This summer squash severed as a source of inoculum of the 
+causal agent of CPM. 
+
+(B) Disease assessment 
+The assessment of resistance/tolerance/susceptible was made 60 days after 
+planting when the disease was fully established in the filed.Each plant was 
+carefully evaluated and rated for severity on the 4th and 5th leaves, 4th and 5th 
+petioles, and vines (main stem) using the scale developed by Caligiore-Gei et al. (2022)
+based on the percentage of leaf covered by powdery mildew colonies as follows:
+
+Severity scale	Score	Description 
+S0	          0	No visible sign/symptoms of the disease
+0% < S1 <25%	  1	of leaf surface covered by conidia
+25% ≤ S2 < 50	  2	of leaf surface covered by conidia
+50% ≤ S3 < 75	  3	of leaf surface covered by conidia
+S4 ≥ 75%	  4	of leaf surface covered by conidia, 
+                        chlorotic due to pathogen or dead
+
+The mean severity score were calculated for leaves (4th and 5th leaves), 
+petiole (4th and 5th petioles) and vine for each squash accession. Based 
+on the mean leave severity score, the squash accessions were categorized 
+as resistance/tolerance/susceptible using the following scale:
+
+Severity score	   Category
+        0	   Resistant
+      ≤ 1	   Tolerant
+     ≤ 2-4	   Susceptible
+
+
+(C) Data Analysis
+For the analysis of the field screening data, statistical software R was utilized. 
+The data obtained from the field trial, including severity scores for leaves, petioles, 
+and vines of each squash accession, were subjected to a series of statistical analyses.
+
+(i) Descriptive statistics, such as mean severity scores, standard deviation, and range, 
+were calculated to provide a summary of the overall disease severity in the field trial.
+
+(ii) Analysis of Variance (ANOVA) were performed to assess whether there are any significant 
+differences in disease severity among the squash accessions. This helped identify if 
+there are varieties that demonstrate statistically significant resistance or susceptibility.
+Tukey's HSD were conducted to identify specific pairs of squash accessions that differ significantly in disease severity using the stats and TukeyC packeges.
+
+(iii) Regression analyses (both linear model and generalized linear models) were conducted 
+to explore potential relationships between severity scores on leaves, petioles, and 
+vines using tidyverse and ggplot packages. This provided insights into whether the 
+disease manifested similarly across different parts of the plant. 
+
+
