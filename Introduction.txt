@@ -1,4 +1,44 @@
 INTRODUCTION 
 
+Cucurbit powdery mildew (CPM) poses a significant threat to 
+cucurbits (Squash and Pumpkin) globally, affecting them in both 
+field and greenhouse environments(Caligiore-Gei et al., 2022). 
+It is mainly caused by two erysiphaceous ectoparasites, namely 
+Podosphaera xanthii and Erysiphe cichoracearum (Lebeda et al., 2015). 
+The former pathogen has a worldwide distribution than the later 
+pathogen (McGrath, 2022). The disease poses a significant production 
+problem, leading to a decrease in the quantity and quality of yields, 
+mainly through a decrease in the size or number of fruit or a 
+shortened harvest period, premature senescence of infected leaves, 
+sunburn on fruit, premature or incomplete ripening, and poor storability 
+(e.g., winter squash), low soluble solids, resulting in poor flavor 
+(e.g., melon), poor rind color (e.g., pumpkin) and shriveled, discolored 
+handles (pumpkin), and makes plants more susceptible to other diseases, 
+particularly gummy stem blight (McGrath, 2022).
 
- 
+Powdery Mildew characteristics consists of conspicuous whitish talcum‐like 
+colonies of the pathogen on both sides of the leaves (image 1), petioles 
+and vines (Pérez-García et al., 2009; Caligiore-Gei et al., 2022). The 
+pathogens can not survive without a host, and under favorable conditions, 
+Powdery Mildew develops fast and the time between infection and symptoms 
+can be as short as three days, and spores are rapidly produced. Some reasons
+that can make infection favorable are high density of plants, low amount of 
+light during cucurbits cycle, high doses of nitrogen fertilizers and high 
+humidity (University of Massachusetts Amherst, 2021).
+
+Even though resistant varieties have been developed and improved worldwide 
+to reduce the incidence of CPM disease, fungicides have remained the primary 
+form of disease control (Del Pino et al., 2002). However, the use of these 
+fungicides comes with ongoing challenges compassing prolonged exposure posing 
+risks to human health, harm to non-target species (pollinators and natural 
+predators), soil and water quality, pathogen resistance and also can be 
+expensive, and their accessibility may be limited for some farmers 
+(Cullen et al., 2019; Brauer et al., 2019; Ons et al., 2020).
+
+In view of this challenges posed by overuse of fungicides and wanting a more
+sustainable methods of CPM control and management, research is being 
+conducted in University of New Hampshire to evaluate diiferent squash genotypes
+for a possible resisitant gene against CPM. Therefore, the objective of this study 
+seeks to contribute to the development of resilient crops that can withstand CPM, 
+ultimately promoting sustainable agricultural practices through the identification 
+of resistant squash varieties. 

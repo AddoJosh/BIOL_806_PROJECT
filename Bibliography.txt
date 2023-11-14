@@ -1,3 +1,20 @@
 BIBLIOGRAPHY
 
-1.
+McGrath, M.T. (2022). Cucurbit Powdery Mildew | Cornell Vegetables.. https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/
+
+Pérez-García, A., Romero, D., Fernández-Ortuño, D., López-Ruiz, F., De Vicente, A., & Torés, J. A. (2009). The powdery mildew fungus Podosphaera fusca (synonym Podosphaera xanthii), a constant threat to cucurbits. Molecular plant pathology, 10(2), 153–160. https://doi.org/10.1111/j.1364-3703.2008.00527.x
+
+Cullen, M. G., Thompson, L. J., Carolan, J. C., Stout, J. C., & Stanley, D. A. (2019). Fungicides, herbicides and bees: A systematic review of existing research and methods. PloS one, 14(12), e0225743. https://doi.org/10.1371/journal.pone.0225743
+
+Ons, L., Bylemans, D., Thevissen, K., & Cammue, B. P. A. (2020). Combining Biocontrol Agents with Chemical Fungicides for Integrated Plant Fungal Disease Control. Microorganisms, 8(12), 1930. https://doi.org/10.3390/microorganisms8121930
+
+Brauer, V. S., Rezende, C. P., Pessoni, A. M., De Paula, R. G., Rangappa, K. S., Nayaka, S. C., Gupta, V. K., & Almeida, F. (2019). Antifungal Agents in Agriculture: Friends and Foes of Public Health. Biomolecules, 9(10), 521. https://doi.org/10.3390/biom9100521
+
+
+Lebeda, A., Křístková, E., Sedláková, B., McCreight, J. D., & Coffey, M. D. (2015). Cucurbit powdery mildews: methodology for objective determination and denomination of races. European Journal of Plant Pathology, 144(2), 399–410. https://doi.org/10.1007/s10658-015-0776-7
+
+Caligiore-Gei, P. F., Della-Gaspera, P., Benitez, E., & Tarnowski, C. (2022). Cucurbit Powdery Mildew: First Insights for the Identification of the Causal Agent and Screening for Resistance of Squash Genotypes (Cucurbita moschata (Duchesne ex Lam.) Duchesne ex Poir.) in Mendoza, Argentina. Plant Pathology Journal (Suwon), 38(4), 296–303. https://doi.org/10.5423/ppj.oa.01.2022.0002
+
+University of Massachusetts Amherst. (2021, September 6). Cucurbits, powdery mildew. Center for Agriculture, Food, and the Environment. https://ag.umass.edu/vegetable/fact-sheets/cucurbits-powdery-mildew
+
+Del Pino, D., Olalla, L., Pérez-Garcı́A, A., De Rivera, M. E. S. D., García, S. M., Moreno, R., De Vicente, A., & Torés, J. A. (2002). Occurrence of races and pathotypes of cucurbit powdery mildew in southeastern Spain. Phytoparasitica, 30(5), 459–466. https://doi.org/10.1007/bf02979750
