@@ -54,9 +54,7 @@ Severity score	   Category
 
 
 (C) Data Analysis
-For the analysis of the field screening data, statistical software R was utilized. 
-The data obtained from the field trial, including severity scores for leaves, petioles, 
-and vines of each squash accession, were subjected to a series of statistical analyses.
+For the analysis of the field screening data, we conducted our analyses using the programming software, R v 4.3.1 (2023.06.2 Build 561). The data obtained from the field trial, including severity scores for leaves, petioles, and vines of each squash accession, were subjected to a series of statistical analyses.
 
 (i) Descriptive statistics, such as mean severity scores, standard deviation, and range, 
 were calculated to provide a summary of the overall disease severity in the field trial.
