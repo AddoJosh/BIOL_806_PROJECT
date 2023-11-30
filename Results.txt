@@ -1,2 +1,24 @@
 RESULTS
-1.
+
+1.Testing Normality of the data
+
+The skewness for the leave severity severity was approximately 0.808 and Kurtosis was approximately 2.537 indicating that more values are concentrated around the center with heavier tails compared to a normal distribution, a possible suggestion that most of the squash accession may be tolerant (lying between susceptible and resistant). The Shapiro-Wilk statistic was  0.87069 (Pr < W = < 4.023e-07) confirming that leave severity scores were not following a normal distribution. 
+
+
+2.Construction of Box plot 
+
+Box plot was constructed to visualize the distribution of powdery mildew score on leave, petiole and vine of the various squash accessions. 
+On leave, Powdery Mildew severity score ranged from 0 to 3 (as shown Figure 1 by the boxplot). The squash accession, OSA and PM_2 recorded the least severity score where as WBN-1-88 had the highest rating. Powdery Mildew severity score petiole and vine had a mean value of 0.0698 and 0.0930, respectively (summary data). 
+
+3.Analysis of Variance to determine the effect of Powdery Mildew on squash accessions
+
+To determine the effect of powdery mildew among the various squash accessions, ANOVA was performed.  
+The analysis of Powdery mildew severity on leaves among the various squash accessions showed significant variations in susceptibility levels. An analysis of variance (ANOVA) revealed a significant effect of Powdery mildew on leave scores (F(6, 79) = 16.26, p < 0.001), indicating notable differences among the squash accessions. WBN-1-88 cultivar had the highest mean leave score, signifying a heightened susceptibility level (Mean = 2.425). Following closely, C_LUN breeding line displayed a substantial mean leave score (Mean = 1.183). NH 148-15-6 and PM_1 breeding lines showed similar mean leave scores (Mean ≈ 1.042 and 0.936, respectively), implying a moderate susceptibility level. OSA cultivar and PM_2 breeding line demonstrated relatively lower mean leave scores of 0.308 and 0.175, respectively, indicating a lower susceptibility, also post hoc analysis showed that leave score of OSA and PM_2 were not different from each other. 
+
+Analysis of variance (ANOVA) of the influence of Powdery mildew on petiole scores among the  different squash accessions, resulted in a non-significant effect (F(6, 79) = 1.526, p = 0.18). However, distinct patterns emerged upon examining petiole severity scores across the various accessions. WBN-1-88 recorded the highest mean petiole score (Mean = 0.250).This was followed by C_LUN with a mean petiole score of 0.083. Conversely, PM_1, NH 148-15-6 and NH_204_PM breeding lines recorded mean petiole scores of 0.071 and 0.042, 0.042, respectively. OSA cultivar, and PM_2 breeding line recorded no powdery mildew symptoms on the petioles. 
+
+Analysis of variance (ANOVA) of the influence of Powdery mildew among the  different squash accessions, varied significantly differences (F(6, 79) = 4.166, p = 0.00109). Again, WBN-1-88 demonstrated the highest severity on vines (Mean = 0.417). This was followed by C_LUN (Mean = 0.167), while PM_1, NH 148-15-6, NH_204_PM, OSA, and PM_2 showed similar mean severity score (0.000). Pairwise comparisons indicated no distinct differences among the latter squash accessions in terms of vine Powdery Mildew severity.
+
+4. Categorizing squash accessions based on severity score on leaves
+
+Based on the severity score on leaves of the various squash accessions, they were categorised into three groups, namely, resistant (mean score of 0.0), tolerant (mean score of 0.1-0.9) and susceptible (mean score of >1.0). The results demonstrated that none of the squash accessions were immune to powdery mildew infection, two (C_LUN and WBN-1-88) were categorized as susceptible and five (PM_1, NH 148-15-6, NH_204_PM, OSA, and PM_2) were categorized as tolerant. 
