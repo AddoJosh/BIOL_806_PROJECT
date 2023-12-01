@@ -1,3 +1,8 @@
 DISCUSSION 
 
-1
+The information provided by the graphics represents the analyses of powdery mildew severity among seven squash accessions. Skewness and kurtosis measurs suggested a distribution with bigger results compared to normal, this can be due to concentration of values around the center and a prevalence of tolerant squash accessions.
+The Shapiro-Wilk statistic supports the deviation from a normal distribution, and the box plot graphics represents clearly the distribution of powdery mildew scores on leaves petioles and vines across the seven different squash accessions. 
+The ANOVA results shows significant variantion in susceptibility levels between the squash accessions, and some specific cultivars and breeding lines had distinct responses to powdery mildew infection. The severity score were based on a categorization into resistant, tolerant and susceptible, making the representation practical for understanding.
+The correlation analysis through linear regression models between leaves and petiole severity scores demonstrates strong relationships. The significant coefficients and model fit indicators put together the reliability of the models  and suggests a substantial impact of powdery mildew on leaves and petiole.
+The informations measured revealed that none of the squash accessions are imune to powdery mildew infection, the accessions C-LUN and WBN-1-88 are categorized as susceptible and the other five as tolerants. The informations colected are valuable, specially for squash breeding programs and cultivation strategies.
+To summarize, the statistical analyses and the categories provided to each squash accessions provide a good understanding of powdery mildew severity among these different squash types. The information is helpful to decision-making in agricultural practices, and help growers and breeders to select and develop squash varieties that exhibit desirable levels of resintance or tolerance to powdery mildew.
