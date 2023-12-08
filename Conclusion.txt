@@ -1,2 +1,3 @@
 CONCLUSION 
-1.
+
+Descriptive and categorical analysis concluded that C_LUN and WBN-1-88 as susceptible squash accessions while identifying the other five accessions (PM_1, NH 148-15-6, NH_204_PM, OSA, and PM_2) as tolerant to CPM infection. The strong predictive relationship between leaf severity scores and severity in petioles and vines across all squash accessions suggests shared genetic mechanisms governing resistance or susceptibility to CPM across different plant parts, potentially indicating common gene expressions or regulations. Genes or markers associated with resistance in one tissue might signal resistance in others, facilitating the selection and development of more robust cultivars.

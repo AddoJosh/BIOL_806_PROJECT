@@ -1,13 +1,16 @@
 ---
 title: "FINAL PROJECT"
 author: "Joshua Addo & Julia Oliveira Barreiro De Jesus"
-date: "2023-11-14"
-output: html_document
+date: "2023-12-05"
+output:
+  html_document:
+    highlight: tango
+    theme: cosmo
 ---
 
-## Title: Screening for Resistance of cucurbit Genotypes to Powdery Mildew
+# Title: Screening for Resistance of cucurbit Genotypes to Powdery Mildew
 
-# INTRODUCTION 
+## INTRODUCTION 
 
 Cucurbit powdery mildew (CPM) poses a significant threat to cucurbits (Squash and Pumpkin) globally, affecting them in both field and greenhouse environments (Caligiore-Gei et al., 2022). It is mainly caused by two erysiphaceous ectoparasites, namely Podosphaera xanthii and Erysiphe cichoracearum (Lebeda et al., 2015). The former pathogen has a worldwide distribution than the later pathogen (McGrath, 2022). The disease poses a significant production problem, leading to a decrease in the quantity and quality of yields, mainly through a decrease in the size or number of fruit or a shortened harvest period, premature senescence of infected leaves, sunburn on fruit, premature or incomplete ripening, and poor storability (e.g., winter squash), low soluble solids, resulting in poor flavor (e.g., melon), poor rind color (e.g., pumpkin) and shriveled, discolored handles (pumpkin), and makes plants more susceptible to other diseases, particularly gummy stem blight (McGrath, 2022).
 
@@ -18,16 +21,18 @@ In view of this challenges posed by overuse of fungicides and wanting a more sus
 
 
 
-# METHODOLOGY
+## METHODOLOGY
 
-## (A) Field screening
+### (A) Field screening
 
 The field trial was carried out during the summer of 2023 at the Woodman Farm (43°08′58″ N, 70°56′28″ W and Elevation 41.59 m) to test the resistance of 7 squash accessions (comprising 3 cultivars and 4 breeding lines) (Table 1) to Cucurbit Powdery Mildew (CPM). The trial was designed in complete randomized blocks, with 3 replications, each replication consisting of 4 plants. Summer Squash were planted around the fields and innoculated with CPM before the test squash accessions were planted. This summer squash severed as a source of inoculum of the causal agent of CPM. 
 
 
-```{r}
-library(knitr)
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+install.packages("https://cran.rstudio.com/bin/windows/contrib/4.3/kableExtra_1.3.4.zip", repos = NULL, type = "source")
 library(kableExtra)
+install.packages("https://cran.rstudio.com/bin/windows/contrib/4.3/knitr_1.45.zip",repos = NULL, type = "source")
+library(knitr)
 
 # Create a data frame for squash accessions without the 'Notes' column
 squash_accessions <- data.frame(
@@ -36,13 +41,12 @@ squash_accessions <- data.frame(
   Species = c("Cucurbita lundelliana", "C. moschata", "C. moschata", "C. okeechobeensis", "C. moschata", "C. moschata", "C. moschata")
 )
 
+
 # Create a table using knitr::kable and format with kableExtra
-table <- kable(squash_accessions, caption = "Table: Squash Accessions Used in the Study") %>%
-  kable_styling(bootstrap_options = c("striped", "bordered"), full_width = FALSE)
-
-print(table)
+kable(squash_accessions, caption = "Table 1: Squash Accessions Used in the Study") %>%
+  kable_styling(bootstrap_options = c("striped","bordered"), full_width = FALSE)
 ```
-
+*Susceptible cultivar
 
 Table 1: Squash accessions used in this study
 Squash accession 	Type 	              Species 
@@ -63,8 +67,8 @@ WBN-1-88*	   domesticated
 ## (B) Disease assessment 
 The assessment of resistance/tolerance/susceptible was made 60 days after planting when the disease was fully established in the field. Each plant was carefully evaluated and rated for severity on the 4th and 5th leaves, 4th and 5th petioles, and vines (main stem) using the scale developed by Caligiore-Gei et al. (2022) based on the percentage of leaf covered by powdery mildew colonies as shown in Table 1 and Fig.1.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE}
+install.packages("https://cran.rstudio.com/bin/windows/contrib/4.3/kableExtra_1.3.4.zip", repos = NULL, type = "source")
 library(kableExtra)
 install.packages("https://cran.rstudio.com/bin/windows/contrib/4.3/knitr_1.45.zip",repos = NULL, type = "source")
 library(knitr)
@@ -77,12 +81,13 @@ Severity_scale <- data.frame(
 )
 
 # Create a table using knitr::kable and format with kableExtra
-kable(Severity_scale, caption = "Table 1: severity scale") %>%
+kable(Severity_scale, caption = "Table 2: severity scale") %>%
   kable_styling(bootstrap_options = c("striped","bordered"), full_width = FALSE)
 ```
 
 The mean severity score were calculated for leaves (4th and 5th leaves), petiole (4th and 5th petioles) and vine for each squash accession. Based on the mean leave severity score, the squash accessions were categorized as resistance/tolerance/susceptible using the following scale in Table 2.
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+install.packages("https://cran.rstudio.com/bin/windows/contrib/4.3/kableExtra_1.3.4.zip", repos = NULL, type = "source")
 library(kableExtra)
 install.packages("https://cran.rstudio.com/bin/windows/contrib/4.3/knitr_1.45.zip",repos = NULL, type = "source")
 library(knitr)
@@ -94,7 +99,7 @@ Score_category <- data.frame (
 
 
 # Create a table using knitr::kable and format with kableExtra
-kable(Score_category, caption = "Table 2: Score category") %>%
+kable(Score_category, caption = "Table 3: Score category") %>%
   kable_styling(bootstrap_options = c("striped","bordered"), full_width = FALSE)
 ```
 
@@ -107,20 +112,13 @@ knitr::include_graphics("C:/Users/ja1453/OneDrive - USNH/Desktop/Severity_image.
 
 
 
-
 ## (C) Data Analysis
 For the analysis of the field screening data, we conducted our analyses using the programming software, R v 4.3.1 (2023.06.2 Build 561). The data obtained from the field trial, including severity scores for leaves, petioles, and vines of each squash accession, were subjected to a series of statistical analyses.
 (i) Descriptive statistics, such as mean severity scores, standard deviation, and range, were calculated to provide a summary of the overall disease severity in the field trial.
 (ii) Analysis of Variance (ANOVA) were performed to assess whether there are any significant differences in disease severity among the squash accessions. This helped identify if there are varieties that demonstrate statistically significant resistance or susceptibility. Tukey's HSD were conducted to identify specific pairs of squash accessions that differ significantly in disease severity using the stats and TukeyC packeges.
 (iii) Regression analyses (both linear model and generalized linear models) were conducted to explore potential relationships between severity scores on leaves, petioles, and vines using tidyverse and ggplot packages. This provided insights into whether the disease manifested similarly across different parts of the plant.
 
----
-title: "BIOL 806 FINAL PROJECT_RESULTS"
-author: "Joshua Addo NAD Julia Oliveira Barreiro De Jesus"
-date: "2023-11-07"
-output:
-  html_document: default
----
+
 
 # RESULTS
 
@@ -222,9 +220,9 @@ summary(anova_Leave)
 library(agricolae)
 # Perform Duncan's test
 duncan_results <- LSD.test(anova_Leave, "Squash accession", group = TRUE)
-print(duncan_results)
 
 ```
+
 ```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 library(ggplot2)
 
@@ -251,7 +249,7 @@ ggplot(data, aes(x = as.numeric(factor(Squash_accession)), y = Leave_score, fill
 
 
 
-```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 # Run ANOVA
 anova_Petiole <- aov(`Petiole_score` ~ `Squash accession`, data = PM_Resistance)
 summary(anova_Petiole)
@@ -260,7 +258,7 @@ summary(anova_Petiole)
 library(agricolae)
 # Perform Duncan's test
 duncan_results1 <- LSD.test(anova_Petiole, "Squash accession", group = TRUE)
-print(duncan_results1)
+
 ```
 
 Analysis of variance (ANOVA) of the influence of Powdery mildew on petiole scores among the  different squash accessions, resulted in a non-significant effect (F(6, 79) = 1.526, p = 0.18). However, distinct patterns emerged upon examining petiole severity scores across the various accessions. WBN-1-88 recorded the highest mean petiole score (Mean = 0.250).This was followed by C_LUN with a mean petiole score of 0.083. Conversely, PM_1, NH 148-15-6 and NH_204_PM breeding lines recorded mean petiole scores of 0.071 and 0.042, 0.042, respectively. OSA cultivar, and PM_2 breeding line recorded no powdery mildew symptoms on the petioles. 
@@ -297,7 +295,7 @@ summary(anova_vine)
 library(agricolae)
 # Perform Duncan's test
 duncan_vine <- LSD.test(anova_vine, "Squash accession", group = TRUE)
-print(duncan_vine)
+
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
@@ -347,62 +345,117 @@ PM_Resistance1<- PM_Resistance1 %>%
       "Resistant"
     )
   ))
-print(PM_Resistance1)
+
+# Create a table using knitr::kable and format with kableExtra
+install.packages("https://cran.rstudio.com/bin/windows/contrib/4.3/kableExtra_1.3.4.zip", repos = NULL, type = "source")
+library(kableExtra)
+install.packages("https://cran.rstudio.com/bin/windows/contrib/4.3/knitr_1.45.zip",repos = NULL, type = "source")
+library(knitr)
+
+kable(PM_Resistance1, caption = "Table 4: Score category") %>%
+  kable_styling(bootstrap_options = c("striped","bordered"), full_width = FALSE)
 ```
+
+
 
 ## Regression analysis and Model to show relationship between severity scores on leaves, petioles and vines 
 
-A generalized linear regression model run on mean leaves severity score and Petiole severity score of all squash accessions (Figure 5) indicated that there was significant correlation between powdery mildew infection on leaves and petioles (p > 0.05). 
+A generalized linear regression model run on mean leaves severity score and Petiole severity score of all squash accessions (Figure 6) indicated that there was significant correlation between powdery mildew infection on leaves and petioles (p > 0.05). 
 
-
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 # Plot of Leave score and Petiole score
-ggplot(data = DATA_FOR_FINAL_PROJECT, aes(x = Leave_Score, y = Petiole_Score)) +
+ggplot(data = PM_Resistance, aes(x = Leave_score, y = Petiole_score)) +
   geom_point() +
   theme_classic() +
   geom_smooth(method = "glm", method.args = list(family = "binomial"), color = "red") +
   labs(x = "Leave severity score", y = "Petiole severity score")
 
 # A regression model
-model_reg <- glm(formula = Petiole_Score ~ Leave_Score, data = DATA_FOR_FINAL_PROJECT, family = "binomial")
+model_reg <- glm(formula = Petiole_score ~ Leave_score, data = PM_Resistance, family = "binomial")
 summary(model_reg)
+
 ```
+
+
 
 ***Figure 6: Relationship between mean leave severity score and petiole severity scores, including best fit line*** 
 
-This graphic shows the intercept value as -5.4090, that indicates the log-odds of the response variable when the predictors are zero. The Leave_Score explains that for each unit increasing, there is an estimated increase of 1.7404 in the log-odds of the response. The significance explains that both coefficients are significant, with the p < 0.01, and this shows a meaningful impact of Leave_Score on the response. Model Fit shows that it fits well, due to the low deviance of 27.346 and a small AIC as 25.041.
+Figure 7 shows that the intercept value as -5.6902, indicating the log-odds of the response variable when the predictors are zero. The leaves score explains that for each unit increasing, there is an estimated increase of 2.0685 in the log-odds of the vine score. There was significant prediction (p < 0.05) between CPM infection on leaves and vine score due to infection by CPM. Model Fit shows that it fits well, due to the low deviance of 53.230 and a small AIC of 32.119. 
 
-```{r}
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 # Plot of Leave score and vine score
-ggplot(data = DATA_FOR_FINAL_PROJECT, aes(x = Leave_Score, y = Vine)) +
+ggplot(data = PM_Resistance, aes(x = Leave_score, y = vine)) +
   geom_point() +
   theme_classic() +
   geom_smooth(method = "glm", method.args = list(family = "binomial"), color = "red") +
   labs(x = "Leave severity score", y = "Vine severity score")
 
 # A regression model
-model_reg <- glm(formula = Vine ~ Leave_Score, data = DATA_FOR_FINAL_PROJECT, family = "binomial")
+model_reg <- glm(formula = vine ~ Leave_score, data = PM_Resistance, family = "binomial")
 summary(model_reg)
 ```
 
+
+
 ***Figure 7: Relationship between mean leave severity score and vine severity scores, including best fit line*** 
 
-This comparison between Leave severity score and vine severity score represented by the graphic above, shows that the intercept is estimated as -5.6902 and it represents the log-odds of the response when predictors are zero. Leave_Score shows that for each unit increasing, there will be an estimated increase of 2.06885 in the log-odds of the response. The significance shows a strong impact of Leave_Score on the response, because p < 0.001. The model fit shows that it fits well due to low residual deviance (32.119) and AIC value as 36.119, considered moderate.
+The relationship between leave severity score and vine severity score is represented by Figure 8. The model shows that the intercept is estimated as -3.6902 and it represents the log-odds of the response when predictors are zero. Leave score shows that for each unit increasing, there will be an estimated increase of 5.8488 in the log-odds of the response. The significance shows a strong impact of leave score on vine score because p < 0.001. The model fit shows that it fits well due to low residual deviance (53.230) and AIC value as 32.347, considered moderate (Appendix 5)
 
-```{r}
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 # Plot of Leave score and Petiole score
-ggplot(data = DATA_FOR_FINAL_PROJECT, aes(x = Petiole_Score, y = Vine)) +
+ggplot(data = PM_Resistance, aes(x = Petiole_score, y = vine)) +
   geom_point() +
   theme_classic() +
   geom_smooth(method = "glm", method.args = list(family = "binomial"), color = "red") +
   labs(x = "Petiole severity score", y = "Vine severity score")
 
 # A regression model
-model_reg <- glm(formula = Vine ~ Petiole_Score, data = DATA_FOR_FINAL_PROJECT, family = "binomial")
+model_reg <- glm(formula = vine ~ Petiole_score, data = PM_Resistance, family = "binomial")
 summary(model_reg)
 ```
 
+
 ***Figure 8: Relationship between mean petiole severity score and vine severity scores, including best fit line*** 
 
-This graphic shows values that prove that Petiole_Score variable has a significant influence. Intercept value is -3.3761, and this represents the log-odds of the response variable when the predictors are zero. Petiole_Score shows that for each unit increasing the estimated increase in the log-odds is 5.8488. Both coefficients are significant, because p < 0.001, and this shows a strong impact of Petiole_Score on the response. And the model fits well because it has a low residual deviance (28.347) and the AIC value is 32.347, considered moderate.
 
+
+
+
+# DISCUSSION 
+
+The information provided by the graphics represents the analyses of powdery mildew severity among seven squash accessions. Skewness and kurtosis measurs suggested a distribution with bigger results compared to normal, this can be due to concentration of values around the center and a prevalence of tolerant squash accessions.
+The Shapiro-Wilk statistic supports the deviation from a normal distribution, and the box plot graphics represents clearly the distribution of powdery mildew scores on leaves petioles and vines across the seven different squash accessions. 
+The ANOVA results shows significant variation in susceptibility levels between the squash accessions, and some specific cultivars and breeding lines had distinct responses to powdery mildew infection. The severity score were based on a categorization into resistant, tolerant and susceptible, making the representation practical for understanding.
+The correlation analysis through linear regression models between leaves and petiole severity scores demonstrates strong relationships. The significant coefficients and model fit indicators put together the reliability of the models  and suggests a substantial impact of powdery mildew on leaves and petiole.
+The information measured revealed that none of the squash accessions are immune to powdery mildew infection, the accessions C-LUN and WBN-1-88 are categorized as susceptible and the other five as tolerant. The information collected are valuable, specially for squash breeding programs and cultivation strategies.
+To summarize, the statistical analyses and the categories provided to each squash accessions provide a good understanding of powdery mildew severity among these different squash types. The information is helpful to decision-making in agricultural practices, and help growers and breeders to select and develop squash varieties that exhibit desirable levels of resistance or tolerance to powdery mildew.
+
+
+# CONCLUSION
+
+Descriptive and categorical analysis concluded that C_LUN and WBN-1-88 as susceptible squash accessions while identifying the other five accessions (PM_1, NH 148-15-6, NH_204_PM, OSA, and PM_2) as tolerant to CPM infection. The strong predictive relationship between leaf severity scores and severity in petioles and vines across all squash accessions suggests shared genetic mechanisms governing resistance or susceptibility to CPM across different plant parts, potentially indicating common gene expressions or regulations. Genes or markers associated with resistance in one tissue might signal resistance in others, facilitating the selection and development of more robust cultivars.
+
+
+# BIBLIOGRAPHY
+
+McGrath, M.T. (2022). Cucurbit Powdery Mildew | Cornell Vegetables.. https://www.vegetables.cornell.edu/pest-management/disease-factsheets/cucurbit-powdery-mildew/
+
+Pérez-García, A., Romero, D., Fernández-Ortuño, D., López-Ruiz, F., De Vicente, A., & Torés, J. A. (2009). The powdery mildew fungus Podosphaera fusca (synonym Podosphaera xanthii), a constant threat to cucurbits. Molecular plant pathology, 10(2), 153–160. https://doi.org/10.1111/j.1364-3703.2008.00527.x
+
+Cullen, M. G., Thompson, L. J., Carolan, J. C., Stout, J. C., & Stanley, D. A. (2019). Fungicides, herbicides and bees: A systematic review of existing research and methods. PloS one, 14(12), e0225743. https://doi.org/10.1371/journal.pone.0225743
+
+Ons, L., Bylemans, D., Thevissen, K., & Cammue, B. P. A. (2020). Combining Biocontrol Agents with Chemical Fungicides for Integrated Plant Fungal Disease Control. Microorganisms, 8(12), 1930. https://doi.org/10.3390/microorganisms8121930
+
+Brauer, V. S., Rezende, C. P., Pessoni, A. M., De Paula, R. G., Rangappa, K. S., Nayaka, S. C., Gupta, V. K., & Almeida, F. (2019). Antifungal Agents in Agriculture: Friends and Foes of Public Health. Biomolecules, 9(10), 521. https://doi.org/10.3390/biom9100521
+
+
+Lebeda, A., Křístková, E., Sedláková, B., McCreight, J. D., & Coffey, M. D. (2015). Cucurbit powdery mildews: methodology for objective determination and denomination of races. European Journal of Plant Pathology, 144(2), 399–410. https://doi.org/10.1007/s10658-015-0776-7
+
+Caligiore-Gei, P. F., Della-Gaspera, P., Benitez, E., & Tarnowski, C. (2022). Cucurbit Powdery Mildew: First Insights for the Identification of the Causal Agent and Screening for Resistance of Squash Genotypes (Cucurbita moschata (Duchesne ex Lam.) Duchesne ex Poir.) in Mendoza, Argentina. Plant Pathology Journal (Suwon), 38(4), 296–303. https://doi.org/10.5423/ppj.oa.01.2022.0002
+
+University of Massachusetts Amherst. (2021, September 6). Cucurbits, powdery mildew. Center for Agriculture, Food, and the Environment. https://ag.umass.edu/vegetable/fact-sheets/cucurbits-powdery-mildew
+
+Del Pino, D., Olalla, L., Pérez-Garcı́A, A., De Rivera, M. E. S. D., García, S. M., Moreno, R., De Vicente, A., & Torés, J. A. (2002). Occurrence of races and pathotypes of cucurbit powdery mildew in southeastern Spain. Phytoparasitica, 30(5), 459–466. https://doi.org/10.1007/bf02979750

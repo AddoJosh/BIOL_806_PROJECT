@@ -12,7 +12,7 @@ the fields and innoculated with CPM before the test squash accessions were
 planted. This summer squash severed as a source of inoculum of the 
 causal agent of CPM. 
 
-Table 1: 
+Table 1: Squash accessions used in this study
 Squash accession 	Type 	              Species 
 C_LUN	           wild cultivar	   Cucurbita lundelliana
 NH 148-15-6	   breeding line	   C. moschata
@@ -25,7 +25,7 @@ PM_2	           breeding line
 WBN-1-88*	   domesticated 
                    cultivar 	           C. moschata
 
-*Susceptible to Powdery mildew
+*Susceptible to Cucurbit Powdery mildew
 
 (B) Disease assessment 
 The assessment of resistance/tolerance/susceptible was made 60 days after 
