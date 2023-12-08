@@ -22,3 +22,9 @@ Analysis of variance (ANOVA) of the influence of Powdery mildew among the  diffe
 4. Categorizing squash accessions based on severity score on leaves
 
 Based on the severity score on leaves of the various squash accessions, they were categorised into three groups, namely, resistant (mean score of 0.0), tolerant (mean score of 0.1-0.9) and susceptible (mean score of >1.0). The results demonstrated that none of the squash accessions were immune to powdery mildew infection, two (C_LUN and WBN-1-88) were categorized as susceptible and five (PM_1, NH 148-15-6, NH_204_PM, OSA, and PM_2) were categorized as tolerant. 
+
+5. Regression analysis and Model to show relationship between severity scores on leaves, petioles and vines 
+
+A generalized linear regression model run on mean leaves severity score and Petiole severity score of all squash accessions (Figure 5) indicated that there was significant correlation between powdery mildew infection on leaves and petioles (p > 0.05). 
+
+This graphic shows the intercept value as -5.4090, that indicates the log-odds of the response variable when the predictors are zero. The Leave_Score explains that for each unit increasing, there is an estimated increase of 1.7404 in the log-odds of the Petiole score. The significance explains that both coefficients are significant, with the p < 0.01, and this shows a meaningful impact of leave score on the petiole score. Model Fit shows that it fits well, due to the low deviance of 27.346 and a small AIC as 25.041.
